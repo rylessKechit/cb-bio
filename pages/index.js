@@ -50,99 +50,104 @@ export default function CEOProfile() {
               My Companies
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* YOUR SERVICES GROUP */}
-              <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                    </svg>
+            <div className="flex flex-wrap justify-center gap-8">
+              {/* Première ligne - 2 cartes */}
+              <div className="w-[450px]">
+                <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all h-full">
+                  <div className="flex items-start mb-6">
+                    <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-medium text-white mb-1">YOUR SERVICES GROUP</h3>
+                      <p className="text-sm text-gray-400">Business Services - Concierge Specialist</p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-medium text-white mb-1">YOUR SERVICES GROUP</h3>
-                    <p className="text-sm text-gray-400">Business Services</p>
+                  
+                  <p className="text-gray-200 mb-4 leading-relaxed">
+                    Company specialized in professional cleaning services, 
+                    concierge services, vehicle transportation and logistics. 
+                    We support businesses with their daily operational needs.
+                  </p>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-2">
+                      <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Cleaning</span>
+                      <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Concierge</span>
+                      <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Transport</span>
+                    </div>
+                    <a 
+                      href="https://yourservices-group.com" 
+                      className="text-accent hover:text-accent-light text-sm font-medium transition-colors"
+                    >
+                      Visit website →
+                    </a>
                   </div>
-                </div>
-                
-                <p className="text-gray-200 mb-4 leading-relaxed">
-                  Company specialized in professional cleaning services, 
-                  concierge services, vehicle transportation and logistics. 
-                  We support businesses with their daily operational needs.
-                </p>
-                
-                <div className="flex items-center justify-between">
-                  <div className="flex gap-2">
-                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Cleaning</span>
-                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Concierge</span>
-                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Transport</span>
-                  </div>
-                  <a 
-                    href="https://yourservices-group.com" 
-                    className="text-accent hover:text-accent-light text-sm font-medium transition-colors"
-                  >
-                    Visit website →
-                  </a>
                 </div>
               </div>
 
-              {/* ITI CORPORATE */}
-              <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
-                      <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"/>
-                    </svg>
+              <div className="w-[450px]">
+                <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all h-full">
+                  <div className="flex items-start mb-6">
+                    <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                        <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"/>
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-medium text-white mb-1">ITI CORPORATE</h3>
+                      <p className="text-sm text-gray-400">Transport Services</p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-medium text-white mb-1">ITI CORPORATE</h3>
-                    <p className="text-sm text-gray-400">Transport Services</p>
+                  
+                  <p className="text-gray-200 mb-4 leading-relaxed">
+                    Specialized transport company offering comprehensive vehicle 
+                    transportation solutions. We provide reliable logistics services 
+                    for businesses requiring efficient mobility solutions.
+                  </p>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-4">
+                      <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Transport</span>
+                      <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Logistics</span>
+                    </div>
+                    <span className="text-gray-500 text-sm">Active</span>
                   </div>
-                </div>
-                
-                <p className="text-gray-200 mb-4 leading-relaxed">
-                  Specialized transport company offering comprehensive vehicle 
-                  transportation solutions. We provide reliable logistics services 
-                  for businesses requiring efficient mobility solutions.
-                </p>
-                
-                <div className="flex items-center justify-between">
-                  <div className="flex gap-4">
-                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Transport</span>
-                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Logistics</span>
-                  </div>
-                  <span className="text-gray-500 text-sm">Active</span>
                 </div>
               </div>
 
-              {/* ITI SERVICES */}
-              <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"/>
-                      <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
-                    </svg>
+              {/* Deuxième ligne - 1 carte centrée */}
+              <div className="w-[450px] flex justify-center">
+                <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all w-full">
+                  <div className="flex items-start mb-6">
+                    <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"/>
+                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-medium text-white mb-1">ITI SERVICES</h3>
+                      <p className="text-sm text-gray-400">Service Solutions</p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-medium text-white mb-1">ITI SERVICES</h3>
-                    <p className="text-sm text-gray-400">Service Solutions</p>
+                  
+                  <p className="text-gray-200 mb-4 leading-relaxed">
+                    Service company dedicated to supporting businesses. 
+                    We develop tailored solutions for our clients&apos; specific needs 
+                    across various industry sectors.
+                  </p>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-4">
+                      <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Consulting</span>
+                      <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Services</span>
+                    </div>
+                    <span className="text-gray-500 text-sm">In development</span>
                   </div>
-                </div>
-                
-                <p className="text-gray-200 mb-4 leading-relaxed">
-                  Service company dedicated to supporting businesses. 
-                  We develop tailored solutions for our clients&apos; specific needs 
-                  across various industry sectors.
-                </p>
-                
-                <div className="flex items-center justify-between">
-                  <div className="flex gap-4">
-                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Consulting</span>
-                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Services</span>
-                  </div>
-                  <span className="text-gray-500 text-sm">In development</span>
                 </div>
               </div>
             </div>
