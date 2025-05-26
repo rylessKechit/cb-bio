@@ -38,7 +38,7 @@ export default function CEOProfile() {
               </p>
               <div className="text-center pt-6 border-t border-dark-border">
                 <p className="text-accent italic">
-                  &quot;Creating useful and sustainable services&quot;
+                  &quot;Our only limit... your imagination&quot;
                 </p>
               </div>
             </div>
