@@ -33,7 +33,7 @@ export default function CEOProfile() {
           <div className="max-w-4xl mx-auto mb-20">
             <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8">
               <p className="text-lg text-gray-200 leading-relaxed text-center mb-6">
-                Entrepreneur for over <span className="text-white font-medium">20 years</span>, I have had the opportunity to create and manage 4 companies in the service sector. 
+                Entrepreneur for over <span className="text-white font-medium">13 years</span>, I have had the opportunity to create and manage 4 companies in the service sector. 
                 Today, I focus on developing practical solutions that make life easier for businesses and individuals.
               </p>
               <div className="text-center pt-6 border-t border-dark-border">
