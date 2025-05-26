@@ -50,7 +50,7 @@ export default function CEOProfile() {
               My Companies
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               {/* YOUR SERVICES GROUP */}
               <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all">
                 <div className="flex items-start mb-6">
@@ -67,13 +67,14 @@ export default function CEOProfile() {
                 
                 <p className="text-gray-200 mb-4 leading-relaxed">
                   Company specialized in professional cleaning services, 
-                  vehicle transportation and logistics. We support businesses 
-                  with their daily operational needs.
+                  concierge services, vehicle transportation and logistics. 
+                  We support businesses with their daily operational needs.
                 </p>
                 
                 <div className="flex items-center justify-between">
-                  <div className="flex gap-4">
+                  <div className="flex gap-2">
                     <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Cleaning</span>
+                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Concierge</span>
                     <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Transport</span>
                   </div>
                   <a 
@@ -82,6 +83,36 @@ export default function CEOProfile() {
                   >
                     Visit website →
                   </a>
+                </div>
+              </div>
+
+              {/* ITI CORPORATE */}
+              <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all">
+                <div className="flex items-start mb-6">
+                  <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                      <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"/>
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-medium text-white mb-1">ITI CORPORATE</h3>
+                    <p className="text-sm text-gray-400">Transport Services</p>
+                  </div>
+                </div>
+                
+                <p className="text-gray-200 mb-4 leading-relaxed">
+                  Specialized transport company offering comprehensive vehicle 
+                  transportation solutions. We provide reliable logistics services 
+                  for businesses requiring efficient mobility solutions.
+                </p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="flex gap-4">
+                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Transport</span>
+                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Logistics</span>
+                  </div>
+                  <span className="text-gray-500 text-sm">Active</span>
                 </div>
               </div>
 
@@ -133,7 +164,7 @@ export default function CEOProfile() {
                 <div className="text-gray-300">Companies founded</div>
               </div>
               <div className="p-6 bg-dark-card rounded-lg border border-dark-border">
-                <div className="text-3xl font-light text-accent mb-2">2</div>
+                <div className="text-3xl font-light text-accent mb-2">3</div>
                 <div className="text-gray-300">Current companies</div>
               </div>
             </div>
@@ -164,7 +195,17 @@ export default function CEOProfile() {
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                   </svg>
-                  <span>+33 6 87 70 70 87</span>
+                  <span>🇫🇷 +33 1 23 45 67 89</span>
+                </a>
+
+                <a 
+                  href="tel:+971506195207" 
+                  className="flex items-center justify-center gap-3 text-gray-200 hover:text-accent transition-colors p-3 rounded-lg hover:bg-dark-hover"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                  </svg>
+                  <span>🇦🇪 +971 50 619 5207</span>
                 </a>
               </div>
             </div>
