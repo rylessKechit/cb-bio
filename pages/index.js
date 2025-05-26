@@ -11,159 +11,156 @@ export default function CEOProfile() {
   return (
     <>
       <Head>
-        <title>Curtis BLEUBAR - CEO & Entrepreneur</title>
-        <meta name="description" content="CEO visionnaire de deux entreprises innovantes dans la tech et le luxe" />
+        <title>Curtis BLEUBAR - Entrepreneur</title>
+        <meta name="description" content="Entrepreneur in business services" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white overflow-hidden">
-        {/* Animated background particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-yellow-400/10 to-amber-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-amber-500/10 to-yellow-600/10 rounded-full blur-3xl animate-pulse-delay"></div>
-        </div>
-
-        <div className={`relative z-10 container mx-auto px-6 py-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className="min-h-screen bg-dark">
+        <div className={`container mx-auto px-6 py-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           
-          {/* Header avec photo de profil */}
+          {/* Header */}
           <div className="text-center mb-16">
-            <div className="relative inline-block mb-8">
-              <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-amber-400 to-yellow-500 p-1 shadow-2xl shadow-amber-500/25">
-                <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-amber-400">AD</span>
-                </div>
-              </div>
-              <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg">
-                <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-              </div>
-            </div>
-            
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gradient-gold font-playfair">
+            <h1 className="text-4xl md:text-5xl font-light text-white mb-4 font-serif">
               Curtis BLEUBAR
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-2 font-inter">CEO & Entrepreneur Visionnaire</p>
-            <div className="flex items-center justify-center space-x-2 text-amber-400">
-              <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
-              <span className="text-sm uppercase tracking-wider font-inter">Executive Leader</span>
-              <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
-            </div>
+            <p className="text-xl text-gray-300 mb-2">Entrepreneur</p>
+            <div className="w-16 h-px bg-accent mx-auto"></div>
           </div>
 
-          {/* Description personnelle */}
-          <div className="max-w-4xl mx-auto mb-16">
-            <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-amber-500/20 shadow-2xl">
-              <p className="text-lg md:text-xl text-gray-200 leading-relaxed text-center font-inter">
-                Entrepreneur passionné avec plus de 15 ans d'expérience dans l'innovation technologique et le développement d'entreprises. 
-                Je dirige deux sociétés florissantes, créant des solutions qui transforment les industries et enrichissent la vie de nos clients. 
-                Ma vision : <span className="text-amber-400 font-semibold">allier excellence opérationnelle et innovation disruptive</span> pour bâtir l'avenir du business.
+          {/* Description */}
+          <div className="max-w-4xl mx-auto mb-20">
+            <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8">
+              <p className="text-lg text-gray-200 leading-relaxed text-center mb-6">
+                Entrepreneur for over <span className="text-white font-medium">20 years</span>, I have had the opportunity to create and manage 4 companies in the service sector. 
+                Today, I focus on developing practical solutions that make life easier for businesses and individuals.
               </p>
+              <div className="text-center pt-6 border-t border-dark-border">
+                <p className="text-accent italic">
+                  "Creating useful and sustainable services"
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Entreprises */}
-          <div className="max-w-6xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-amber-400 font-playfair">
-              Mes Entreprises
+          {/* Entreprises actuelles */}
+          <div className="max-w-6xl mx-auto mb-20">
+            <h2 className="text-3xl font-light text-white text-center mb-12 font-serif">
+              My Companies
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Entreprise 1 */}
-              <div className="group hover:scale-105 transition-all duration-500">
-                <div className="bg-gradient-to-br from-gray-800/60 to-black/60 backdrop-blur-sm rounded-2xl p-8 border border-amber-500/30 shadow-2xl hover:shadow-amber-500/20 hover:border-amber-400/50">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
-                      <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-amber-400 font-playfair">TechLux Solutions</h3>
-                      <p className="text-gray-300 font-inter">Fondée en 2018</p>
-                    </div>
+              {/* YOUR SERVICES GROUP */}
+              <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all">
+                <div className="flex items-start mb-6">
+                  <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                    </svg>
                   </div>
-                  <p className="text-gray-200 mb-4 font-inter">
-                    Société spécialisée dans les solutions technologiques haut de gamme pour les entreprises du secteur du luxe. 
-                    Nous développons des plateformes e-commerce sur mesure et des expériences digitales immersives.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm font-inter">+2M€ CA annuel</span>
-                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm font-inter">25 employés</span>
-                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm font-inter">Tech & Luxe</span>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-medium text-white mb-1">YOUR SERVICES GROUP</h3>
+                    <p className="text-sm text-gray-400">Business Services</p>
                   </div>
+                </div>
+                
+                <p className="text-gray-200 mb-4 leading-relaxed">
+                  Company specialized in professional cleaning services, 
+                  vehicle transportation and logistics. We support businesses 
+                  with their daily operational needs.
+                </p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="flex gap-4">
+                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Cleaning</span>
+                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Transport</span>
+                  </div>
+                  <a 
+                    href="https://yourservices-group.com" 
+                    className="text-accent hover:text-accent-light text-sm font-medium transition-colors"
+                  >
+                    Visit website →
+                  </a>
                 </div>
               </div>
 
-              {/* Entreprise 2 */}
-              <div className="group hover:scale-105 transition-all duration-500">
-                <div className="bg-gradient-to-br from-gray-800/60 to-black/60 backdrop-blur-sm rounded-2xl p-8 border border-amber-500/30 shadow-2xl hover:shadow-amber-500/20 hover:border-amber-400/50">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
-                      <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"/>
-                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-amber-400 font-playfair">Premium Invest</h3>
-                      <p className="text-gray-300 font-inter">Fondée en 2020</p>
-                    </div>
+              {/* ITI SERVICES */}
+              <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 hover:shadow-xl hover:border-accent transition-all">
+                <div className="flex items-start mb-6">
+                  <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg className="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"/>
+                      <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                    </svg>
                   </div>
-                  <p className="text-gray-200 mb-4 font-inter">
-                    Cabinet de conseil en investissement et gestion de patrimoine pour une clientèle fortunée. 
-                    Nous accompagnons nos clients dans leurs stratégies d'investissement et de diversification patrimoniale.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm font-inter">+50M€ sous gestion</span>
-                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm font-inter">12 employés</span>
-                    <span className="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm font-inter">Finance</span>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-medium text-white mb-1">ITI SERVICES</h3>
+                    <p className="text-sm text-gray-400">Service Solutions</p>
                   </div>
+                </div>
+                
+                <p className="text-gray-200 mb-4 leading-relaxed">
+                  Service company dedicated to supporting businesses. 
+                  We develop tailored solutions for our clients' specific needs 
+                  across various industry sectors.
+                </p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="flex gap-4">
+                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Consulting</span>
+                    <span className="px-3 py-1 bg-dark-tag text-gray-300 rounded-full text-sm">Services</span>
+                  </div>
+                  <span className="text-gray-500 text-sm">In development</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Accomplissements */}
-          <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-amber-400 font-playfair">
-              Accomplissements Clés
+          {/* Expérience */}
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl font-light text-white text-center mb-12 font-serif">
+              Background
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center p-6 bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl border border-amber-500/20">
-                <div className="text-4xl font-bold text-amber-400 mb-2 font-playfair">15+</div>
-                <div className="text-gray-300 font-inter">Années d'expérience</div>
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div className="p-6 bg-dark-card rounded-lg border border-dark-border">
+                <div className="text-3xl font-light text-accent mb-2">20+</div>
+                <div className="text-gray-300">Years of experience</div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl border border-amber-500/20">
-                <div className="text-4xl font-bold text-amber-400 mb-2 font-playfair">2</div>
-                <div className="text-gray-300 font-inter">Entreprises dirigées</div>
+              <div className="p-6 bg-dark-card rounded-lg border border-dark-border">
+                <div className="text-3xl font-light text-accent mb-2">4</div>
+                <div className="text-gray-300">Companies founded</div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl border border-amber-500/20">
-                <div className="text-4xl font-bold text-amber-400 mb-2 font-playfair">37</div>
-                <div className="text-gray-300 font-inter">Collaborateurs</div>
+              <div className="p-6 bg-dark-card rounded-lg border border-dark-border">
+                <div className="text-3xl font-light text-accent mb-2">2</div>
+                <div className="text-gray-300">Current companies</div>
               </div>
             </div>
           </div>
 
           {/* Contact */}
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30">
-              <h2 className="text-2xl font-bold mb-6 text-amber-400 font-playfair">
-                Connectons-nous
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-dark-card rounded-lg shadow-lg border border-dark-border p-8 text-center">
+              <h2 className="text-2xl font-light text-white mb-6 font-serif">
+                Contact
               </h2>
-              <div className="flex justify-center space-x-6">
-                <a href="mailto:curtis.b@yourservices-group.com" className="flex items-center space-x-2 text-gray-300 hover:text-amber-400 transition-colors font-inter">
+              <div className="space-y-4">
+                <a 
+                  href="mailto:curtis.b@yourservices-group.com" 
+                  className="flex items-center justify-center gap-3 text-gray-200 hover:text-accent transition-colors p-3 rounded-lg hover:bg-dark-hover"
+                >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                   </svg>
                   <span>curtis.b@yourservices-group.com</span>
                 </a>
-              </div>
-              <div className="flex justify-center space-x-6 mt-4">
-                <a href="tel:+33123456789" className="flex items-center space-x-2 text-gray-300 hover:text-amber-400 transition-colors font-inter">
+                
+                <a 
+                  href="tel:+33123456789" 
+                  className="flex items-center justify-center gap-3 text-gray-200 hover:text-accent transition-colors p-3 rounded-lg hover:bg-dark-hover"
+                >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                   </svg>
